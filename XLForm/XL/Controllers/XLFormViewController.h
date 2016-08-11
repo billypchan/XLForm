@@ -91,6 +91,6 @@ typedef NS_ENUM(NSUInteger, XLFormRowNavigationDirection) {
 +(NSMutableDictionary *)inlineRowDescriptorTypesForRowDescriptorTypes;
 
 -(void)performFormSelector:(SEL)selector withObject:(id)sender;
--(void)keyboardWillShow:(NSNotification *)notification
+-(void)keyboardWillShow:(NSNotification *)notification;
 
 @end
