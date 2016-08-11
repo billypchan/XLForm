@@ -503,13 +503,6 @@
     }
 }
 
-#pragma mark - Private
-
-- (void)contentSizeCategoryChanged:(NSNotification *)notification
-{
-    [self.tableView reloadData];
-}
-
 - (void)keyboardWillShow:(NSNotification *)notification
 {
     UIView * firstResponderView = [self.tableView findFirstResponder];
@@ -534,6 +527,13 @@
             [UIView commitAnimations];
         }
     }
+}
+
+#pragma mark - Private
+
+- (void)contentSizeCategoryChanged:(NSNotification *)notification
+{
+    [self.tableView reloadData];
 }
 
 - (void)keyboardWillHide:(NSNotification *)notification
