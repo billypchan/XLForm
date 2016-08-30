@@ -200,6 +200,7 @@ NSString *const XLFormTextFieldLengthPercentage = @"textFieldLengthPercentage";
     [self.textLabel setContentCompressionResistancePriority:1000 forAxis:UILayoutConstraintAxisHorizontal];
 
     // Add Constraints
+    /*
     [result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(margin)-[_textField]-(margin)-|"
                                                                         options:NSLayoutFormatAlignAllBaseline
                                                                         metrics:[NSDictionary dictionaryWithObjectsAndKeys:@(11.0), @"margin", nil]
@@ -208,6 +209,7 @@ NSString *const XLFormTextFieldLengthPercentage = @"textFieldLengthPercentage";
                                                                         options:NSLayoutFormatAlignAllBaseline
                                                                         metrics:[NSDictionary dictionaryWithObjectsAndKeys:@(11.0), @"margin", nil]
                                                                           views:NSDictionaryOfVariableBindings(_textLabel)]];
+     */
 
     return result;
 }
@@ -217,6 +219,7 @@ NSString *const XLFormTextFieldLengthPercentage = @"textFieldLengthPercentage";
     if (self.dynamicCustomConstraints){
         [self.contentView removeConstraints:self.dynamicCustomConstraints];
     }
+    /*
     NSMutableDictionary * views = [[NSMutableDictionary alloc] initWithDictionary: @{@"label": self.textLabel, @"textField": self.textField}];
     if (self.imageView.image){
         views[@"image"] = self.imageView;
@@ -251,6 +254,7 @@ NSString *const XLFormTextFieldLengthPercentage = @"textFieldLengthPercentage";
     }
 
     [self.contentView addConstraints:self.dynamicCustomConstraints];
+     */
     [super updateConstraints];
 }
 
